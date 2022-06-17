@@ -1,0 +1,21 @@
+{
+  "name": "store_automation",
+  "version": "1.0.0",
+  "description": "Clothes site automation project",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run"
+  },
+  "keywords": [
+    "Automation",
+    "QA",
+    "Quality",
+    "assurance",
+    "Testing"
+  ],
+  "author": "F.H",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^10.1.0"
+  }
+}
