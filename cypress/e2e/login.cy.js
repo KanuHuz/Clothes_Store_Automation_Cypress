@@ -1,14 +1,15 @@
-describe('Login', ()=> {
+describe('Login', () => {
     beforeEach(() => {
         cy.visit('/')
     })
 
     it('Login with incorrect email', () => {
-        cy.get('.login').click();
-        cy.get('#email').type('testemail');
-        cy.get('#passwd').type('asd1');
-        cy.get('#SubmitLogin > span').click();
-        cy.get('ol > li').should('contain', 'Invalid email address');
+        cy.login('testemail', 'asd1')
+        cy.fixture('login').then((login) => { // we call login as a yielded element 
+                cy.get(login.errorMessageLoginEmail).should('contain', 'Invalid email address')
+
+        })
+
     })
 
 })

@@ -1,2 +1,7 @@
-"
-"
+{
+    "loginButton":".login",
+    "emailField":"#email",
+    "passwordField":"#passwd",
+    "submitButton":"#SubmitLogin > span",
+    "errorMessageLoginEmail":"ol > li"
+}
